@@ -1,0 +1,116 @@
+body {
+    background-color: #181818;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background-color: #282828;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .section:last-of-type {
+    margin-bottom: 0;
+  }
+  
+  .control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #383838;
+    padding: 20px;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .control:hover {
+    background-color: #484848;
+  }
+  
+  .control-icon {
+    font-size: 30px;
+    color: #808080;
+  }
+  
+  .control-label {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #a0a0a0;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-color: #383838;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+  }
+  
+  .switch input:checked + .slider {
+    transform: translateX(20px);
+  }
+  
+  .temperature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #383838;
+    padding: 20px;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .temperature:hover {
+    background-color: #484848;
+  }
+  
+  .temperature-value {
+    font-size: 36px;
+    color: #fff;
+  }
+  
+  .temperature-icon {
+    font-size: 30px;
+    margin-right: 10px;
+    color: #808080;
+  }
+  
+  .temperature-label {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #a0a0a0;
+  }
